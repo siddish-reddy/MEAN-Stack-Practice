@@ -1,25 +1,3 @@
-<!-- <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
-    <label> Enter task:
-        <input type="text" formControlName="name" id="">
-    </label>
-    <br>
-    <label> Enter Description:
-        <input type="text" formControlName="desc" id="">
-    </label>
-    <br>
-    <input type="submit">
-</form>
-
-<div *ngIf="taskForm.value && taskForm.value.name">
-    Task: {{taskForm.value.name}}<br>
-    <span *ngIf="taskForm.value && taskForm.value.desc"> Description: {{taskForm.value.desc}}</span>
-</div>
-
-<ul *ngFor="let task of tasks ">
-    <li>
-        {{task.name}}:<br>{{task.desc}}
-    </li>
-</ul> -->
 <div class="wrapper">
     <app-input></app-input>
     <app-view-todos></app-view-todos>
