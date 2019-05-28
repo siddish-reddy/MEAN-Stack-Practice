@@ -1,7 +1,7 @@
 export class Task {
-    name: String;
-    desc: String;
-    constructor(nme: String, dsc: String) {
+    name: string;
+    desc: string;
+    constructor(nme: string, dsc: string) {
         this.name = nme;
         this.desc = dsc;
     }

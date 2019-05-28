@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FetchTodosService } from '../../fetch-todos.service';
+import { Task } from '../task.model';
 
 @Component({
   selector: 'app-view-todos',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-todos.component.css']
 })
 export class ViewTodosComponent implements OnInit {
-
-  constructor() { }
+  tasks: Task[];
+  constructor(private fetchTodoService: FetchTodosService) {
+    this.tasks = [];
+  }
+  getTodos(): void {
+    this.fetchTodoService.getTodos()
+      .subscribe(tasks =>
+        this.tasks = tasks);
+  }
 
   ngOnInit() {
+    this.getTodos();
   }
 
 }

@@ -1,4 +1,4 @@
-<form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+<!-- <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
     <label> Enter task:
         <input type="text" formControlName="name" id="">
     </label>
@@ -19,4 +19,8 @@
     <li>
         {{task.name}}:<br>{{task.desc}}
     </li>
-</ul>
+</ul> -->
+<div class="wrapper">
+    <app-input></app-input>
+    <app-view-todos></app-view-todos>
+</div>
