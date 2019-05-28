@@ -8,12 +8,16 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
+import { InputComponent } from './dashboard/input/input.component';
+import { ViewTodosComponent } from './dashboard/view-todos/view-todos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    AboutComponent
+    AboutComponent,
+    InputComponent,
+    ViewTodosComponent
   ],
   imports: [
     HttpClientModule,
